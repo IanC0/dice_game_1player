@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section id ="background">
+            <h1>1 Player Game</h1>
+            <h2>Rules:</h2>
+            <p>Reach a score above 20 to win</p>
+            <p>Roll a 1 and lose</p>
+            <div id="dieShape">
+                <div class="dieCol">
+                    <div class="dot" id="dot1"></div>
+                    <div class="dot" id="dot2"></div>
+                    <div class="dot" id="dot3"></div>
+                </div>
+                <div class="dieCol">
+                    <div class="dot" id="dot4"></div>
+                    <div class="dot" id="dot5"></div>
+                    <div class="dot" id="dot6"></div>
+                </div>
+                <div class="dieCol">
+                    <div class="dot" id="dot7"></div>
+                    <div class="dot" id="dot8"></div>
+                    <div class="dot" id="dot9"></div>
+                </div>
+            </div>
+            <section id="rollAndScore">
+                <button id="button"><p>Roll!</p></button>
+                <p id="scoreText">Your score is </p>
+                <button id="buttonReset"><p>Reset!</p></button>
+            </section>
+        </section>
+        <script src="app.js" async defer></script>
+    </body>
+</html>

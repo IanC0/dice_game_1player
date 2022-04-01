@@ -1,0 +1,68 @@
+#background {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90vw;
+    height: 90vh;
+    background-color: #005f73;
+    border-radius: 20px;
+    color: #ee9b00;
+    text-align:center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 18px;
+}
+#background p {
+    max-width: 200px;
+    padding-top: 2px;
+    list-style: none;
+}
+#dieShape {
+    border: #FED9B7 solid;
+    margin-top: 5vh;
+    height: 30vh;
+    width: 30vh;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.dieCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.dot {
+    height: 5vh;
+    width:5vh;
+    border-radius: 50%;
+}
+#rollAndScore{
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    width: 70vw;
+    height: 70px;
+    margin-top: 5vh;
+}
+button {
+    background-color: #df9b1b;
+    border-radius: 15px;
+    width: 70px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 18px;
+}
+#scoreText {
+    width: 40vw;
+}
+
+h2, p {
+    margin: 2px;
+}
+p {
+
+    font-size: 20px;
+}
