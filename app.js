@@ -1,8 +1,10 @@
 const button = document.getElementById("button");
 let scoreText = document.getElementById("scoreText");
-const buttonReset = document.getElementById("buttonReset")
+const buttonReset = document.getElementById("buttonReset");
+
 let scoreCount = 0;
 
+// dots on die //
 const [dot1, dot2, dot3, dot4, dot5, dot6, dot7, dot8, dot9] = [
     document.getElementById("dot1"),
     document.getElementById("dot2"),
@@ -14,18 +16,14 @@ const [dot1, dot2, dot3, dot4, dot5, dot6, dot7, dot8, dot9] = [
     document.getElementById("dot8"),
     document.getElementById("dot9")]
 
-
-
+// Roll button functionalityb//
 button.addEventListener('click', ()=>{
     let number = Math.floor(Math.random() * 6) + 1;
-    console.log(number);
     scoreCount += number;
     diceRollFunction(number);
     if (number == 1) {
-        console.log(number);
         scoreText.innerHTML = "Your score is 1, you lose!";
         button.style.visibility = "hidden";
-        console.log(scoreText);
     } else if (scoreCount > 20) {
         scoreText.innerHTML = `Your score is ${scoreCount}, you win!`;
         arr.forEach((e) => {
@@ -37,6 +35,8 @@ button.addEventListener('click', ()=>{
         scoreText.innerHTML = `Your score is ${scoreCount}`;
     }
 })
+
+// Reset button functionality
 buttonReset.addEventListener("click", () => {
     scoreCount = 0;
     scoreText.innerHTML = `Your score is ${scoreCount}`;
@@ -44,8 +44,9 @@ buttonReset.addEventListener("click", () => {
     arr.forEach((e) => {e.style.backgroundColor = "transparent";})
 })
 
+// Die image functionality (dots appearing in die) 
 let arr = [dot1, dot2, dot3, dot4, dot5, dot6, dot7, dot8, dot9];
-
+// switch statement for all 6 possble sides of die
 const diceRollFunction= function(param) {
     switch(param){
         case 1:
